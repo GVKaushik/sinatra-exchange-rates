@@ -1,0 +1,8 @@
+<h1> Currency pairs </h1>
+<% @currency = @parsed_data.fetch("currencies").keys %>
+<ul>
+<% @currency.each do |symbol|%>
+<li><a href ="/<%=symbol%>" </a> Convert 1 <%= symbol %>... </li>
+
+<% end %>
+</ul>
